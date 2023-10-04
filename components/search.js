@@ -53,7 +53,7 @@ export default function Search() {
       <section className={styles.searchHeader}>
         {/* Search section (Already flex) */}
         <section className={styles.searchSection}>
-          <h3>The Ethereum Blockchain Explorer</h3>
+          <h3 className={styles.mainTitle}>The Ethereum Blockchain Explorer</h3>
           <section className={styles.input_section}>
             <div className={styles.filterDown}>
               <p>All Filters</p>
