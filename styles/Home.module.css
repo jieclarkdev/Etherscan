@@ -148,15 +148,6 @@
   width: 100%;
 }
 
-.searchHeader {
-  display: flex;
-  background-color: rgb(8, 29, 53);
-  background-image: url("https://etherscan.io/images/svg/waves-light.svg");
-  height: 17rem;
-  padding: 0 11.5rem;
-  padding-top: 3rem;
-}
-
 .adSection {
   display: flex;
   justify-content: center;
@@ -257,7 +248,7 @@
 
 @media (max-width: 390px) {
   .main {
-    background-color: #87ceeb;
+    background-color: red;
   }
 
   .menu {
@@ -277,6 +268,9 @@
   .logo {
     width: 9rem;
     height: auto;
+  }
+  .searchContainer {
+    width: 100%;
   }
 
   .imgContainer {
@@ -315,16 +309,81 @@
     width: 15px;
     height: auto;
   }
+
+  .adSection {
+    display: none;
+  }
+  .searchHeader {
+    display: block;
+    padding: 0 !important;
+    padding-top: 3rem !important;
+    padding-left: 10px !important;
+  }
+
+  .mainTitle {
+    padding: 0 !important;
+    margin-bottom: 10px !important;
+    font-size: 18.68px !important;
+  }
+
+  .sponsored {
+    display: none !important;
+  }
+
+  .input_section {
+    width: 20rem !important;
+  }
+
+  .filterDown {
+    display: none !important;
+  }
+
+  .inputField {
+    padding-left: 5px !important;
+    width: 15rem !important;
+  }
+
+  .inputField::placeholder {
+    color: #6c757d !important;
+    font-size: 0.9375rem !important;
+  }
+
+  .sponsoredMobile {
+    display: block;
+    align-items: center;
+    font-size: 14.4px;
+    color: #cccccc;
+    padding-top: 1rem;
+    padding-left: 0.3rem;
+  }
+
+  .boldText {
+    margin-left: 0 !important;
+  }
+}
+
+.searchHeader {
+  display: flex;
+  background-color: rgb(8, 29, 53);
+  background-image: url("https://etherscan.io/images/svg/waves-light.svg");
+  height: 17rem;
+  padding: 0 11.5rem;
+  padding-top: 3rem;
 }
 
 @media (min-width: 768px) {
   .imgContainer p {
     display: none; /* Hide the p element on desktop */
   }
+
+  .profileMobileView {
+    display: none;
+  }
+
+  .menuMobileContainer {
+    display: none;
+  }
 }
-/* .navSignIn {
-  display: none;
-} */
 
 .dropDownImg {
   width: 12px;
@@ -349,6 +408,9 @@
   font-size: 0.9375rem;
   gap: 10px;
   color: #141414;
+}
+.filterDown p {
+  margin-bottom: 0;
 }
 
 .filterDown:hover {

@@ -105,6 +105,22 @@ export default function Search() {
               <b>Learn More.</b>
             </a>
           </section>
+          <section className={styles.sponsoredMobile}>
+            <span className={styles.sponsorFirstText}>Featured:</span> Elevate
+            your website with curated <br />
+            <span className={styles.boldText}>name tags and labels</span>
+            🏷️ in the all-new <br />
+            <span className={styles.boldText}> Metadata API.</span>
+            <a
+              href="https://kta.etherscan.com/www/d/cl.php?ebannerid=4002&amp;zoneid=6&amp;sig=f932f0104e4331a6f994e936a6a45b40c2b8925bdb3ec7025fccb86d12c1343e&amp;oadest=https%3A%2F%2Fmetadata.etherscan.io%2F"
+              target="_blank"
+              title="Links to an External Advertiser site"
+              className={styles.sponsorLink}
+            >
+              {" "}
+              <b>Learn More.</b>
+            </a>
+          </section>
         </section>
 
         {/* adSection */}
