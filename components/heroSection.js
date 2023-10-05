@@ -28,6 +28,7 @@ import ArrowUp from "../public/assets/arrow-up.png";
 
 import FooterMap from "../public/assets/footerMap.png";
 import EthLogoFooter from "../public/assets/ethLogoFooter.png";
+import { starOfLife } from "fontawesome";
 
 const randomNumbers = Array.from({ length: 8 }, () =>
   Math.floor(Math.random() * 10)
@@ -53,8 +54,12 @@ export default function HeroSection() {
             {/* ETHER PRICE and MARKET CAP */}
             <section>
               <div className={styles.ethFlex}>
-                <Image src={EthPriceImg} alt="Etherium Img" />
-                <div>
+                <Image
+                  src={EthPriceImg}
+                  alt="Etherium Img"
+                  className={styles.ethPriceImageMobile}
+                />
+                <div className={styles.ethPriceContainer}>
                   <p className={styles.heroNavFont}>ETHER PRICE </p>
                   <p className={styles.heroNavBelowFont}>
                     $1,656.13{" "}
@@ -67,7 +72,11 @@ export default function HeroSection() {
               </div>
               {/* Market Cap */}
               <div className={styles.marketCapFlex}>
-                <Image src={MarketCapImg} alt="Market Cap Img" />
+                <Image
+                  src={MarketCapImg}
+                  alt="Market Cap Img"
+                  className={styles.marketCapImageMobile}
+                />
                 <div>
                   <p className={styles.heroNavFont}>MARKET CAP </p>
                   <p className={styles.heroNavBelowFont}>$199,134,150,060.00</p>
@@ -76,9 +85,13 @@ export default function HeroSection() {
             </section>
             {/* TRANSACTIONS and  LAST FINALIZED BLOCK*/}
             <section className={styles.middleNav}>
-              <div className={styles.flexSeparator}>
+              <div className={styles.flexSeparatorOne}>
                 <div className={styles.transactionFlex}>
-                  <Image src={TransactionImg} alt="Transaction Img" />
+                  <Image
+                    src={TransactionImg}
+                    alt="Transaction Img"
+                    className={styles.transactionImgMobile}
+                  />
                   <div>
                     <p className={styles.heroNavFont}>TRANSACTIONS</p>
                     <p className={styles.heroNavBelowFont}>
@@ -95,9 +108,13 @@ export default function HeroSection() {
                 </div>
               </div>
               {/* LAST FINALIZED BLOCK and LAST SAFE BLOCK  */}
-              <div className={styles.flexSeparator}>
+              <div className={styles.flexSeparatortwo}>
                 <div className={styles.finalizedFlex}>
-                  <Image src={FinalizeImg} alt="Finalized img" />
+                  <Image
+                    src={FinalizeImg}
+                    alt="Finalized img"
+                    className={styles.finalizingImgMobile}
+                  />
                   <div>
                     <p className={styles.heroNavFont}>LAST FINALIZED BLOCK</p>
                     <p className={styles.heroNavBelowFont}>18269345</p>

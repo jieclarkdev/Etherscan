@@ -253,19 +253,111 @@
 
   .latestResults_header {
     display: block !important;
-    height: 35rem !important;
+    height: 31rem !important;
     margin-left: 15px !important;
     width: 330px !important;
   }
 
-  .latestResults_header > section {
-    width: 315px !important ;
-    border-bottom: 1px solid #e9ecef !important;
+  .ethFlex {
+    gap: 5px !important;
+    margin-bottom: 20px;
+    border-bottom: thin solid #e9ecef;
+    margin-left: 5px;
+    padding-bottom: 15px;
+  }
+
+  .marketCapFlex {
+    gap: 5px !important;
+    /* margin-bottom: 20px; */
+    border-bottom: thin solid #e9ecef;
+    margin-left: 5px;
+    padding-bottom: 15px;
+  }
+
+  .middleNav {
+    gap: 20px !important;
+    /* border-bottom: thin solid #e9ecef; */
+
+    /* padding-bottom: 15px; */
+  }
+
+  .flexSeparatorOne {
+    gap: 10px !important;
+  }
+
+  .flexSeparatortwo {
+    gap: 2px !important;
+    border-bottom: thin solid #e9ecef;
+    padding-bottom: 15px;
+  }
+
+  .transactionFlex {
+    gap: 2px !important;
+    margin-left: 5px;
+  }
+
+  .latestResults_header > section:nth-child(2) {
+    width: 330 px !important ;
+    /* border-bottom: 1px solid #e9ecef !important; */
     border-right: none !important;
+    /* padding: 20px 16px !important; */
+    padding-top: 0 !important ;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .latestResults_header > section:last-child {
+    padding-top: 0 !important ;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .ethPriceContainer {
+    width: 40em !important;
+  }
+
+  .latestResults_header > section {
+    width: 330 px !important ;
+    /* border-bottom: 1px solid #e9ecef !important; */
+    border-right: none !important;
+    padding: 20px 16px !important;
+  }
+
+  .ethPriceImageMobile {
+    width: 90px;
+    height: auto;
+  }
+
+  .transactionImgMobile {
+    width: 35px;
+    height: auto;
+  }
+
+  .finalizingImgMobile {
+    width: 35px;
+    height: auto;
+  }
+
+  .finalizedFlex {
+    margin-left: 3px;
+  }
+
+  .marketCapImageMobile {
+    width: 35px;
+    height: auto;
+  }
+
+  .heroNavBelowFont {
+    font-size: 14px !important;
+    margin-bottom: 0 !important;
   }
 
   .menu {
     display: none;
+  }
+  .heroNavFont {
+    margin-bottom: 3px !important;
+    font-size: 12px !important;
   }
 
   .topHeader {
@@ -353,7 +445,7 @@
 
   .inputField {
     padding-left: 5px !important;
-    width: 15rem !important;
+    width: 16rem !important;
   }
 
   .inputField::placeholder {
@@ -708,8 +800,8 @@
   gap: 5px;
 }
 
-.fontWhite {
-  color: #ffff;
+.fontBlack {
+  color: #141414;
 }
 
 .ethFlex {
@@ -749,9 +841,16 @@
   margin-top: 20px;
 }
 
-.flexSeparator {
+.flexSeparatorOne {
   display: flex;
-  justify-content: space-between;
+  gap: 10em;
+  border-bottom: thin solid #e9ecef;
+  padding-bottom: 15px;
+}
+
+.flexSeparatortwo {
+  display: flex;
+  gap: 10em;
 }
 
 .heroNavFont {
@@ -803,7 +902,7 @@
 }
 
 .middleNav {
-  display: flex !important;
+  display: flex;
   justify-content: center;
 }
 
