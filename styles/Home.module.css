@@ -251,11 +251,95 @@
     background-color: red;
   }
 
+  .latestResults_body_title {
+    width: 330px !important;
+  }
+
+  .latestBlockFontSize {
+    font-size: 15px !important;
+    color: #212529;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .latestTransactionFontSize {
+    font-size: 15px !important;
+    color: #212529;
+  }
+
+  .mobileBlocks {
+    justify-content: start !important;
+    padding: 10px;
+    /* background-color: red; */
+    border-bottom: 1px solid #e9ecef;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+  }
+
   .latestResults_header {
     display: block !important;
     height: 31rem !important;
     margin-left: 15px !important;
     width: 330px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .blockSeconds {
+    display: flex;
+    color: #212529;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+
+  .timeSize {
+    font-size: 12px;
+    color: rgb(108, 117, 125);
+    margin-bottom: 0;
+  }
+
+  .recipientType {
+    color: rgb(6, 106, 156);
+    font-size: 14px;
+  }
+
+  .amountTxns {
+    color: rgb(6, 106, 156);
+    font-size: 14px;
+  }
+
+  .feeRecipient {
+    margin-bottom: 0;
+    color: #212529;
+    font-size: 14px;
+  }
+
+  .blockHash {
+    margin-bottom: 0;
+  }
+
+  .latestBlockTransactionsMobile {
+    width: 330px !important;
+    /* padding-top: 0 !important ;
+    padding-left: 16px !important;
+    padding-right: 16px !important; */
+
+    margin-left: 15px;
+  }
+
+  .latestResults_body {
+    display: none !important;
+  }
+
+  .latestBlockTransactionsMobile > section {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    /* padding: 1rem 0; */
+    border: 1px solid #e9ecef;
+    border-radius: 1rem;
+    box-shadow: 0rem 0 1.5rem #ffffff09;
   }
 
   .ethFlex {
@@ -418,6 +502,30 @@
   .adSection {
     display: none;
   }
+
+  .recipientRewardFlex {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #212529;
+    gap: 5px;
+  }
+
+  .recipientRewardFlex p {
+    margin-bottom: 0;
+  }
+
+  .adSectionMobile {
+    display: flex;
+    width: 330px !important;
+    margin-left: 20px;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+  }
+  .adSectionMobile:hover {
+    cursor: pointer;
+  }
+
   .searchHeader {
     display: block;
     padding: 0 !important;
@@ -444,8 +552,9 @@
   }
 
   .inputField {
-    padding-left: 5px !important;
+    padding-left: 10px !important;
     width: 16rem !important;
+    margin-left: 5px !important;
   }
 
   .inputField::placeholder {
@@ -490,6 +599,10 @@
   }
 
   .sponsoredMobile {
+    display: none;
+  }
+
+  .adSectionMobile {
     display: none;
   }
 }
@@ -808,6 +921,8 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  border-bottom: thin solid #e9ecef;
+  padding-bottom: 15px;
 }
 
 .marketCapFlex {
@@ -856,6 +971,7 @@
 .heroNavFont {
   font-size: 0.75rem;
   color: #6c757d;
+  margin-bottom: 0 !important;
 }
 
 .ethLogoFooter {
@@ -1105,7 +1221,7 @@
 }
 
 .boxSize {
-  width: 45px;
+  width: 40px;
   border-radius: 8px;
   height: auto;
 }
@@ -1139,6 +1255,9 @@
   color: #7c7c7c;
   background-color: rgb(248, 249, 250);
   font-weight: bold;
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .donationAddress {
   color: rgb(106, 181, 219);

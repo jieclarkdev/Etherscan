@@ -125,11 +125,13 @@ export default function Search() {
 
         {/* adSection */}
         <section className={styles.adSection}>
-          <Image
-            src={SponsorImg}
-            alt="sponsor image"
-            className={styles.sponsorImgRadius}
-          />
+          <a href="https://goto.etherscan.com/rd/APIF3YT8G7A3EWTWMJB5SFSC7">
+            <Image
+              src={SponsorImg}
+              alt="sponsor image"
+              className={styles.sponsorImgRadius}
+            />
+          </a>
         </section>
       </section>
     </section>
