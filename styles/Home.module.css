@@ -286,7 +286,7 @@
   }
 
   .flexSeparatortwo {
-    gap: 2px !important;
+    gap: 5px !important;
     border-bottom: thin solid #e9ecef;
     padding-bottom: 15px;
   }
