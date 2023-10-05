@@ -8,6 +8,8 @@ import Logo from "../public/assets/logo.png";
 import GasfeeImg from "../public/assets/gasfee2.png";
 import EthLogo from "../public/assets/ethLogo.png";
 import SwitchMode from "../public/assets/moonLogo.png";
+import MenuMobile from "../public/assets/menu.png";
+import ProfileMobile from "../public/assets/user.png";
 
 export default function Header() {
   const [ethPrice, setEthPrice] = useState("");
@@ -57,7 +59,13 @@ export default function Header() {
           <Image src={Logo} alt="Etherscan Logo" className={styles.logo} />
         </div>
         <div className={styles.navSignInContainer}>
+          <div>
+            <Image src={ProfileMobile} className={styles.profileMobileView} />
+          </div>
           <p className={styles.navSignIn}>Sign In</p>
+          <div className={styles.menuMobileContainer}>
+            <Image src={MenuMobile} className={styles.menuMobileView} />
+          </div>
         </div>
         <section className={styles.menu}>
           <p className={styles.selectedHome}>Home</p>
