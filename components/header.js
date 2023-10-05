@@ -53,7 +53,12 @@ export default function Header() {
         </div>
       </section>
       <section className={styles.navbar}>
-        <Image src={Logo} alt="Etherscan Logo" className={styles.logo} />
+        <div className={styles.imgContainer}>
+          <Image src={Logo} alt="Etherscan Logo" className={styles.logo} />
+        </div>
+        <div className={styles.navSignInContainer}>
+          <p className={styles.navSignIn}>Sign In</p>
+        </div>
         <section className={styles.menu}>
           <p className={styles.selectedHome}>Home</p>
           <p className={styles.navFontSize}>

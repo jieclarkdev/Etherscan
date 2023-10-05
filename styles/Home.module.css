@@ -255,6 +255,58 @@
   color: #ffff;
 }
 
+@media (max-width: 450px) {
+  .main {
+    background-color: #87ceeb;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .topHeader {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: start;
+    padding: 0 20px;
+    gap: 10em;
+  }
+
+  .logo {
+    width: 9rem;
+    height: auto;
+  }
+
+  .imgContainer {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navSignIn {
+    color: black;
+    display: block;
+    background-color: red;
+    margin: 0;
+  }
+
+  .navSignInContainer {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .imgContainer p {
+    display: none; /* Hide the p element on desktop */
+  }
+}
+/* .navSignIn {
+  display: none;
+} */
+
 .dropDownImg {
   width: 12px;
   height: auto;
