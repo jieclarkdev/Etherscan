@@ -576,7 +576,7 @@
 
   .scrollableBlocks {
     scroll-behavior: smooth;
-    overflow-y: auto;
+    overflow: auto;
     height: 50%;
   }
 }
