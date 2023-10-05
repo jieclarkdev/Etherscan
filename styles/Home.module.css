@@ -245,10 +245,170 @@
   font-weight: 500;
   color: #ffff;
 }
-
 @media (max-width: 390px) {
-  .main {
-    /* background-color: red; */
+  .latestTransactionMobile {
+    display: block;
+  }
+
+  .textIconMobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 0.9062rem;
+    color: #141414;
+    font-family: "Roboto", sans-serif;
+    font-size: 14.49px;
+  }
+
+  .twitterLogoMobile {
+    width: 14px;
+    height: auto;
+    border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .mediumLogoMobile {
+    width: 14px;
+    height: auto;
+    border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .facebookLogoMobile {
+    width: 14px;
+    height: auto;
+    border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .redditLogoMobile {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .bottomDonation {
+    font-family: "Roboto", sans-serif;
+    font-size: 12.56px;
+    color: #141414;
+  }
+
+  .companyCommunity {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 20px;
+  }
+
+  .communitySelf {
+    align-self: baseline;
+  }
+
+  .ethLogoFooterSize {
+    width: 23px !important;
+  }
+
+  .powerByEthereum {
+    margin: 0 !important;
+  }
+
+  .footerSectionMobile {
+    width: 330px;
+  }
+
+  .middleFooter {
+    display: block !important;
+    width: 330px !important;
+  }
+
+  .ethLogoFooter {
+    font-size: 18.75px !important;
+  }
+
+  .parentFooter {
+    display: none !important;
+  }
+
+  .parentFooterMobile {
+    width: 330px !important;
+    margin: 0 !important;
+    margin-top: 15px !important;
+    margin-left: 15px !important;
+    font-family: "Roboto", sans-serif !important;
+  }
+
+  .worldMap {
+    display: none !important;
+  }
+
+  .latestTransactionColor {
+    margin: 0 !important;
+  }
+
+  .freeRecipient {
+    margin-bottom: 0 !important;
+  }
+
+  .timeFontSize {
+    margin: 0 !important;
+  }
+
+  .latestTransactionDesktop {
+    display: none !important;
+  }
+
+  .hashNumberContainer {
+    font-size: 14.49px;
+    display: flex;
+    margin-bottom: 0 !important;
+    gap: 3px;
+  }
+
+  .transactionOne {
+    padding: 10px !important;
+  }
+
+  .latestBlockReward {
+    display: flex !important;
+    gap: 5px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .txNumber {
+    color: #141414;
+    display: flex;
+    gap: 3px;
+  }
+
+  .greenColor {
+    background-color: green !important;
+  }
+
+  .latestTransactionsMobile {
+    margin-top: 15px !important;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .hashNumber {
+    color: #40a0d1 !important;
   }
 
   .latestResults_body_title {
@@ -257,9 +417,15 @@
 
   .latestBlockFontSize {
     font-size: 15px !important;
-    color: #212529;
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
+    color: #212529 !important;
+    font-weight: bold !important;
+    font-family: "Roboto", sans-serif !important;
+  }
+  .latestTransactionFontSize {
+    font-size: 15px !important;
+    color: #212529 !important;
+    font-weight: bold !important;
+    font-family: "Roboto", sans-serif !important;
   }
 
   .latestTransactionFontSize {
@@ -574,11 +740,15 @@
     margin-left: 0 !important;
   }
 
-  .scrollableBlocks {
-    scroll-behavior: smooth;
-    overflow: auto;
-    height: 50%;
+  .blockRewardFontSize {
+    margin: 0 !important;
   }
+
+  /* .scrollableBlocks {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 50%;
+  } */
 }
 
 .searchHeader {
@@ -596,6 +766,10 @@
   }
 
   .latestBlockTransactionsMobile {
+    display: none;
+  }
+
+  .parentFooterMobile {
     display: none;
   }
 

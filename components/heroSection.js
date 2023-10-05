@@ -147,7 +147,7 @@ export default function HeroSection() {
           </section>
 
           <section className={styles.latestResults_body}>
-            <section>
+            <section className={styles.greenColor}>
               <section className={styles.latestResults_body_title}>
                 <h3 className={styles.latestBlockFontSize}>Latest Blocks</h3>
               </section>
@@ -352,7 +352,7 @@ export default function HeroSection() {
                 </div>
               </div>
             </section>
-            <section>
+            <section className={styles.testinggg}>
               <section className={styles.latestResults_body_title}>
                 <h3 className={styles.latestTransactionFontSize}>
                   Latest Transactions
@@ -575,7 +575,9 @@ export default function HeroSection() {
           <section className={styles.latestBlockTransactionsMobile}>
             <section className={styles.scrollableBlocks}>
               <section className={styles.latestResults_body_title}>
-                <h3 className={styles.latestBlockFontSize}>Latest Blocks</h3>
+                <h3 className={styles.latestTransactionFontSize}>
+                  Latest Blocks
+                </h3>
               </section>
               {/* Parent latest block container */}
               <div>
@@ -796,7 +798,9 @@ export default function HeroSection() {
                 </div>
               </div>
             </section>
-            <section>
+
+            {/* Latest Transactions */}
+            <section className={styles.latestTransactionDesktop}>
               <section className={styles.latestResults_body_title}>
                 <h3 className={styles.latestTransactionFontSize}>
                   Latest Transactions
@@ -1012,6 +1016,266 @@ export default function HeroSection() {
                 </div>
               </section>
             </section>
+
+            {/* Latest Transactions mobile */}
+            <section className={styles.latestTransactionsMobile}>
+              <section className={styles.latestResults_body_title}>
+                <h3 className={styles.latestTransactionFontSize}>
+                  Latest Transactions
+                </h3>
+              </section>
+              <section>
+                <div className={styles.transactionOne}>
+                  {/* hash and time */}
+
+                  <div className={styles.txNumber}>
+                    <p className={styles.hashNumberContainer}>
+                      TX#{" "}
+                      <span className={styles.hashNumber}>
+                        0xc17dcd37999b60...
+                      </span>
+                    </p>
+                    <p className={styles.timeFontSize}>15 secs ago</p>
+                  </div>
+
+                  {/* recipient and txn */}
+                  <div>
+                    <p className={styles.freeRecipient}>
+                      From{" "}
+                      <span className={styles.blueText}>
+                        0x2759bC...F3fF1aD8
+                      </span>
+                    </p>
+                    <div className={styles.latestBlockReward}>
+                      <p className={styles.latestTransactionColor}>
+                        To{" "}
+                        <span className={styles.blueText}>
+                          0x929E76...287Cdd87
+                        </span>
+                      </p>
+                      {/* Block reward */}
+
+                      <p className={styles.blockRewardFontSize}>0.04704 Eth</p>
+                    </div>
+                  </div>
+                </div>
+                {/* 2 */}
+                <div className={styles.transactionOne}>
+                  {/* hash and time */}
+
+                  <div className={styles.txNumber}>
+                    <p className={styles.hashNumberContainer}>
+                      TX#{" "}
+                      <span className={styles.hashNumber}>
+                        0xcc7a842420f8e04...
+                      </span>
+                    </p>
+                    <p className={styles.timeFontSize}>15 secs ago</p>
+                  </div>
+
+                  {/* recipient and txn */}
+                  <div>
+                    <p className={styles.freeRecipient}>
+                      From{" "}
+                      <span className={styles.blueText}>
+                        0xb246Ce...a7ac1E95
+                      </span>
+                    </p>
+                    <div className={styles.latestBlockReward}>
+                      <p className={styles.latestTransactionColor}>
+                        To{" "}
+                        <span className={styles.blueText}>
+                          0xdAC17F...3D831ec7
+                        </span>
+                      </p>
+                      {/* Block reward */}
+
+                      <p className={styles.blockRewardFontSize}>0.03026 Eth</p>
+                    </div>
+                  </div>
+                </div>
+                {/* 3 */}
+                <div className={styles.transactionOne}>
+                  {/* hash and time */}
+
+                  <div className={styles.txNumber}>
+                    <p className={styles.hashNumberContainer}>
+                      TX#{" "}
+                      <span className={styles.hashNumber}>
+                        0xb6903ec43d238f8...
+                      </span>
+                    </p>
+                    <p className={styles.timeFontSize}>15 secs ago</p>
+                  </div>
+
+                  {/* recipient and txn */}
+                  <div>
+                    <p className={styles.freeRecipient}>
+                      From{" "}
+                      <span className={styles.blueText}>
+                        0x2759bC...F3fF1aD8
+                      </span>
+                    </p>
+                    <div className={styles.latestBlockReward}>
+                      <p className={styles.latestTransactionColor}>
+                        To{" "}
+                        <span className={styles.blueText}>
+                          0x041515...09244a99
+                        </span>
+                      </p>
+                      {/* Block reward */}
+
+                      <p className={styles.blockRewardFontSize}>0.07449 Eth</p>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.transactionOne}>
+                  {/* hash and time */}
+
+                  <div className={styles.txNumber}>
+                    <p className={styles.hashNumberContainer}>
+                      TX#{" "}
+                      <span className={styles.hashNumber}>
+                        0x3183fe4ef45d2d05...
+                      </span>
+                    </p>
+                    <p className={styles.timeFontSize}>15 secs ago</p>
+                  </div>
+
+                  {/* recipient and txn */}
+                  <div>
+                    <p className={styles.freeRecipient}>
+                      From{" "}
+                      <span className={styles.blueText}>
+                        0xbCD6AF...2b49fE8c
+                      </span>
+                    </p>
+                    <div className={styles.latestBlockReward}>
+                      <p className={styles.latestTransactionColor}>
+                        To{" "}
+                        <span className={styles.blueText}>
+                          0x0fFa87...9fB8F07
+                        </span>
+                      </p>
+                      {/* Block reward */}
+
+                      <p className={styles.blockRewardFontSize}>0.02548 Eth</p>
+                    </div>
+                  </div>
+                </div>
+                {/* 4 */}
+                <div className={styles.transactionOne}>
+                  {/* hash and time */}
+
+                  <div className={styles.txNumber}>
+                    <p className={styles.hashNumberContainer}>
+                      TX#{" "}
+                      <span className={styles.hashNumber}>
+                        0xb6903ec43d238f8...
+                      </span>
+                    </p>
+                    <p className={styles.timeFontSize}>15 secs ago</p>
+                  </div>
+
+                  {/* recipient and txn */}
+                  <div>
+                    <p className={styles.freeRecipient}>
+                      From{" "}
+                      <span className={styles.blueText}>
+                        0x2759bC...F3fF1aD8
+                      </span>
+                    </p>
+                    <div className={styles.latestBlockReward}>
+                      <p className={styles.latestTransactionColor}>
+                        To{" "}
+                        <span className={styles.blueText}>
+                          0x041515...09244a99
+                        </span>
+                      </p>
+                      {/* Block reward */}
+
+                      <p className={styles.blockRewardFontSize}>0.07449 Eth</p>
+                    </div>
+                  </div>
+                </div>
+                {/* 5 */}
+                <div className={styles.transactionOne}>
+                  {/* hash and time */}
+
+                  <div className={styles.txNumber}>
+                    <p className={styles.hashNumberContainer}>
+                      TX#{" "}
+                      <span className={styles.hashNumber}>
+                        0x77990846f0c9cfd7...
+                      </span>
+                    </p>
+                    <p className={styles.timeFontSize}>15 secs ago</p>
+                  </div>
+
+                  {/* recipient and txn */}
+                  <div>
+                    <p className={styles.freeRecipient}>
+                      From{" "}
+                      <span className={styles.blueText}>
+                        0x108823...Cbd35856
+                      </span>
+                    </p>
+                    <div className={styles.latestBlockReward}>
+                      <p className={styles.latestTransactionColor}>
+                        To{" "}
+                        <span className={styles.blueText}>
+                          0x0fFa87...9fB8F079
+                        </span>
+                      </p>
+                      {/* Block reward */}
+
+                      <p className={styles.blockRewardFontSize}>0.02548 Eth</p>
+                    </div>
+                  </div>
+                </div>
+                {/* 6 */}
+                <div className={styles.transactionOne}>
+                  {/* hash and time */}
+
+                  <div className={styles.txNumber}>
+                    <p className={styles.hashNumberContainer}>
+                      TX#{" "}
+                      <span className={styles.hashNumber}>
+                        0x52f6adf58af68f31...
+                      </span>
+                    </p>
+                    <p className={styles.timeFontSize}>15 secs ago</p>
+                  </div>
+
+                  {/* recipient and txn */}
+                  <div>
+                    <p className={styles.freeRecipient}>
+                      From{" "}
+                      <span className={styles.blueText}>
+                        0x27aA72...57bD8f34
+                      </span>
+                    </p>
+                    <div className={styles.latestBlockReward}>
+                      <p className={styles.latestTransactionColor}>
+                        To{" "}
+                        <span className={styles.blueText}>
+                          0x1f9090...e676c326
+                        </span>
+                      </p>
+                      {/* Block reward */}
+
+                      <p className={styles.blockRewardFontSize}>
+                        0.0.05487 Eth
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* Last bottom */}
+                <div className={styles.viewAllTransaction}>
+                  VIEW ALL TRANSACTIONS{" "}
+                </div>
+              </section>
+            </section>
           </section>
           {/* Footer */}
           <section className={styles.parentFooter}>
@@ -1120,6 +1384,122 @@ export default function HeroSection() {
               </div>
               {/* Last Footer */}
               <div className={styles.bottomFooter}>
+                <p>Etherscan &copy; 2023 (F1)</p>
+                <p>
+                  Donations:{" "}
+                  <span className={styles.donationAddress}>
+                    0x71c765...d8976f ❤️
+                  </span>
+                </p>
+              </div>
+            </section>
+          </section>
+          {/* Footer Mobile */}
+          <section className={styles.parentFooterMobile}>
+            <section className={styles.footerSectionMobile}>
+              <div className={styles.fourIcons}>
+                {/* icons */}
+                <div className={styles.footerIcons}>
+                  <div className={styles.twitterContainer}>
+                    <Image
+                      src={TwitterLogo}
+                      alt="Twitter logo"
+                      className={styles.twitterLogoMobile}
+                    />
+                  </div>
+                  <div className={styles.mediumContainer}>
+                    <Image
+                      src={MediumLogo}
+                      alt="Medium logo"
+                      className={styles.mediumLogoMobile}
+                    />
+                  </div>
+                  <div className={styles.facebookContainer}>
+                    {" "}
+                    <Image
+                      src={FacebookLogo}
+                      alt="Facebook logo"
+                      className={styles.facebookLogoMobile}
+                    />
+                  </div>
+                  <div className={styles.redditContainer}>
+                    <Image
+                      src={RedditLogo}
+                      alt="Reddit logo"
+                      className={styles.redditLogoMobile}
+                    />
+                  </div>
+                </div>
+                {/* text og icons */}
+                <div className={styles.textIconMobile}>
+                  <Image
+                    src={ArrowUp}
+                    alt="arrow up"
+                    className={styles.arrowUpIcon}
+                  />
+                  <div>Back to Top</div>
+                </div>
+              </div>
+              <div className={styles.middleFooter}>
+                {/* first container */}
+                <div className={styles.firstTwoContainer}>
+                  <div>
+                    <div className={styles.ethLogoFooter}>
+                      <Image
+                        src={EthLogoFooter}
+                        alt="Eth logo footer"
+                        className={styles.ethLogoFooterSize}
+                      />
+                      <p className={styles.powerByEthereum}>
+                        Powered by Ethereum
+                      </p>
+                    </div>
+                    <p className={styles.ethereumDescription}>
+                      Etherscan is a Block Explorer and Analytics Platform for
+                      Ethereum, a decentralized smart contracts platform.
+                    </p>
+                  </div>
+                </div>
+
+                <div className={styles.companyCommunity}>
+                  {/* Company Container */}
+                  <div>
+                    <p className={styles.firstWord}>Company</p>
+                    <p className={styles.subWord}>About Us</p>
+                    <p className={styles.subWord}>Brand Us</p>
+                    <p className={styles.subWord}>Contact Us</p>
+                    <p className={styles.subWord}>Careers</p>
+                    <p className={styles.subWord}>Terms of Service</p>
+                    <p className={styles.subWord}>Bug Bounty</p>
+                  </div>
+                  {/* Community */}
+                  <div className={styles.communitySelf}>
+                    <p className={styles.firstWord}>Community</p>
+                    <p className={styles.subWord}>Api Documentation</p>
+                    <p className={styles.subWord}>Knowledge Base</p>
+                    <p className={styles.subWord}>Network Status</p>
+                    <p className={styles.subWord}>Newsletters</p>
+                    <p className={styles.subWord}>Disqus Comments</p>
+                  </div>
+                </div>
+
+                <div className={styles.productsAndServices}>
+                  {/* fourth container */}
+                  <div>
+                    <p className={styles.firstWord}>Products & Services</p>
+                    <p className={styles.subWord}>Advertise</p>
+                    <p className={styles.subWord}>
+                      Explorer-as-a-Service (EaaS)
+                    </p>
+                    <p className={styles.subWord}>API Plans</p>
+                    <p className={styles.subWord}>Priority Support</p>
+                    <p className={styles.subWord}>Blockscan</p>
+                    <p className={styles.subWord}>Blockscan Chat</p>
+                  </div>
+                </div>
+              </div>
+              {/* Last Footer */}
+              <div className={styles.bottomDonation}>
                 <p>Etherscan &copy; 2023 (F1)</p>
                 <p>
                   Donations:{" "}
