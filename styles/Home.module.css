@@ -248,7 +248,7 @@
 
 @media (max-width: 390px) {
   .main {
-    background-color: red;
+    /* background-color: red; */
   }
 
   .latestResults_body_title {
@@ -476,7 +476,6 @@
   }
 
   .navSignInContainer {
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -588,6 +587,11 @@
 @media (min-width: 768px) {
   .imgContainer p {
     display: none; /* Hide the p element on desktop */
+  }
+
+  .scrollableBlocks {
+    scroll-behavior: smooth;
+    overflow-y: auto;
   }
 
   .profileMobileView {

@@ -573,7 +573,7 @@ export default function HeroSection() {
           {/* Mobile latest blocks and transactions */}
 
           <section className={styles.latestBlockTransactionsMobile}>
-            <section>
+            <section className={styles.scrollableBlocks}>
               <section className={styles.latestResults_body_title}>
                 <h3 className={styles.latestBlockFontSize}>Latest Blocks</h3>
               </section>
