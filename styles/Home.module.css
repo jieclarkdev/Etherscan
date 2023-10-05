@@ -573,6 +573,12 @@
   .boldText {
     margin-left: 0 !important;
   }
+
+  .scrollableBlocks {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    height: 50%;
+  }
 }
 
 .searchHeader {
@@ -589,9 +595,8 @@
     display: none; /* Hide the p element on desktop */
   }
 
-  .scrollableBlocks {
-    scroll-behavior: smooth;
-    overflow-y: auto;
+  .latestBlockTransactionsMobile {
+    display: none;
   }
 
   .profileMobileView {
