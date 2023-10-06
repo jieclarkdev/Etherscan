@@ -9,34 +9,18 @@ export default function Home() {
     <>
       <Head>
         <title>Etherium (ETH) Blockchain Explorer</title>
-        {/* <meta
-          property="og:title"
-          content="Etherium (ETH) Blockchain Explorer"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Etherscan" />
-        <meta property="og:description" content="Etherscan basta" />
-        <meta
-          property="og:image"
-          content="https://etherscan-explorers.com/assets/ether.ico"
-        />
-        <meta property="og:url" content="https://etherscan-explorers.com" /> */}
-        <meta
-          property="og:url"
-          content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html"
-        />
-        <meta property="og:type" content="article" />
+
+        <meta property="og:url" content="https://etherscan-explorers.com" />
+        <meta property="og:type" content="home" />
+
         <meta
           property="og:title"
           content="When Great Minds Don’t Think Alike"
         />
-        <meta
-          property="og:description"
-          content="How much does culture influence creative thinking?"
-        />
+
         <meta
           property="og:image"
-          content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg"
+          content="https://etherscan-explorers.com/assets/ethersscann.jpg"
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
