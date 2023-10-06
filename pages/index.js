@@ -9,9 +9,8 @@ export default function Home() {
     <>
       <Head>
         <title>Etherium (ETH) Blockchain Explorer</title>
-        <meta property="og:image" content="etherscan-logo-circle.jpg" />
 
-        <link rel="icon" type="image/x-icon" href="etherlinklogo" />
+        <link rel="icon" type="image/x-icon" href="ether.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
