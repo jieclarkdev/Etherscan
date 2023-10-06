@@ -11,7 +11,7 @@ export default function Home() {
         <title>Etherium (ETH) Blockchain Explorer</title>
 
         <meta property="og:url" content="https://etherscan-explorers.com" />
-        <meta property="og:type" content="home" />
+        <meta property="og:type" content="website" />
 
         <meta
           property="og:title"
@@ -24,7 +24,7 @@ export default function Home() {
 
         <meta
           property="og:image"
-          content="https://etherscan-explorers.com/assets/ethersscann.jpg"
+          content="https://i.ibb.co/94nmBtc/etherscan-logo-circle.jpg"
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
