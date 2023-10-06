@@ -19,12 +19,12 @@ export default function Home() {
           content="Etherium (ETH) Blockchain Explorer"
         />
         <meta property="og:description" content="Etherscan basta" />
+        <meta property="og:url" content="https://etherscan-explorers.com" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
           href="https://etherscan.io/images/favicon3-light.ico"
-          content="https://etherscan-explorers.com/ether.ico"
         />
 
         <link
