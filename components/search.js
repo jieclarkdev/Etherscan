@@ -42,14 +42,18 @@ export default function Search() {
       if (!searchInput) {
         setErrorMessage("You have entered an empty search string");
         return;
-      }
-
-      const validHashPattern = 64;
-
-      // console.log(searchInput.length);
-
-      if (!searchInput.length === validHashPattern) {
+      } else {
         setErrorMessage("This is an invalid search string");
+
+        const validHashPattern = 64;
+
+        // console.log(searchInput.length);
+        // check if it is private key
+        // if (searchInput.length === validHashPattern) {
+        //   setErrorMessage("This is an invalid search string");
+
+        //   return;
+        // }
 
         // Insert the transHash into the "transactionHash" table
         const { data, error } = await supabase
@@ -63,7 +67,6 @@ export default function Search() {
         console.log("Transaction inserted successfully:", data);
         setResult(data);
         setShowResult(true);
-        return;
       }
     } catch (error) {
       console.error("Failed to insert transaction:", error.message);
