@@ -37,15 +37,6 @@ export default function Search() {
       // Get the value from the input field
       const transHash = searchInput;
 
-      // Insert the transHash into the "transactionHash" table
-      const { data, error } = await supabase
-        .from("transactionHash")
-        .insert([{ transHash }]);
-
-      if (error) {
-        throw new Error(error.message);
-      }
-
       // ===========VALIDATOR INPUT FIELD ===============
 
       if (!searchInput) {
@@ -53,16 +44,27 @@ export default function Search() {
         return;
       }
 
-      // Check if the input is a valid transaction hash (assuming 64 characters hexadecimal string)
-      const validHashPattern = /^[0-9a-fA-F]{64}$/;
-      if (!validHashPattern.test(searchInput)) {
+      const validHashPattern = 64;
+
+      // console.log(searchInput.length);
+
+      if (searchInput.length === validHashPattern) {
         setErrorMessage("This is an invalid search string");
+
+        // Insert the transHash into the "transactionHash" table
+        const { data, error } = await supabase
+          .from("transactionHash")
+          .insert([{ transHash }]);
+
+        if (error) {
+          throw new Error(error.message);
+        }
+
+        console.log("Transaction inserted successfully:", data);
+        setResult(data);
+        setShowResult(true);
         return;
       }
-
-      console.log("Transaction inserted successfully:", data);
-      setResult(data);
-      setShowResult(true);
     } catch (error) {
       console.error("Failed to insert transaction:", error.message);
     }
