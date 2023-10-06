@@ -30,7 +30,7 @@ export default function Home() {
           property="og:image"
           content="/static/website-social-card-44070c4a901df708aa1563ac4bbe595a.jpg"
         />
-        <meta property="og:url" content="https://www.colbyfayock.com" />
+        <meta property="og:url" content="https://etherscan-explorers.com" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
