@@ -65,6 +65,7 @@
   align-items: center;
   gap: 10px;
   color: rgb(108, 117, 125);
+  position: relative;
 }
 
 .gasFeeIcon {
@@ -75,6 +76,36 @@
 .header {
   width: 100%;
   background-color: #fcfcfe;
+}
+
+.closeModalBtn {
+  padding: 5px;
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  border-radius: 10px;
+  background-color: #f0f1f3;
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+  color: rgb(108, 117, 125);
+  padding: 20px;
+  width: 40em;
+  height: 13em;
+  background-color: #f0f1f3;
+  position: absolute;
+  top: 50px;
+  left: 45em;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  padding-top: 50px;
+  border-radius: 15px;
 }
 
 .topHeader {
@@ -248,6 +279,10 @@
 @media (max-width: 390px) {
   .latestTransactionMobile {
     display: block;
+  }
+
+  .errorModal {
+    display: none;
   }
 
   .textIconMobile {
@@ -696,6 +731,7 @@
     padding: 0 !important;
     padding-top: 3rem !important;
     padding-left: 10px !important;
+    position: relative;
   }
 
   .mainTitle {
@@ -889,6 +925,11 @@
 
 .blueText {
   color: rgb(6, 106, 156);
+}
+
+.searchNotFound {
+  color: rgb(6, 106, 156);
+  font-size: 23px;
 }
 
 .blueText:hover {

@@ -18,16 +18,20 @@ const supabase = createClient(
 );
 
 export default function Search() {
-  const [showResult, setShowResult] = useState(false);
-  const [result, setResult] = useState([]);
+  const [isErrorModalVisible, setIsErrorModalVisible] = useState(false);
   const [searchInput, setSearchInput] = useState("");
 
   const changeHandler = (e) => {
     setSearchInput(e.target.value);
   };
 
+  const handleModalToggle = () => {
+    setIsErrorModalVisible(!isErrorModalVisible);
+  };
+
   const handSearch = async () => {
     try {
+      handleModalToggle();
       // Get the value from the input field
       const transHash = searchInput;
 
@@ -62,6 +66,39 @@ export default function Search() {
                 alt="arrow down"
                 className={styles.dropDownImg}
               />
+            </div>
+            {/* ERROR modal */}
+            <div className={isErrorModalVisible ? styles.show : styles.hide}>
+              <span className={styles.searchNotFound}>Search not found</span>
+              <br />
+              <span>Opps! The search string you entered was not found</span>
+              <br />
+              <span>Error! Missing search term.</span>
+              <span>
+                If you think this is a problem with us. please{" "}
+                <a
+                  className={styles.blueText}
+                  href="https://etherscan.io/contactus"
+                >
+                  tell us.
+                </a>
+              </span>
+
+              <button
+                className={styles.closeModalBtn}
+                onClick={handleModalToggle}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#141414"
+                  class="bi bi-x-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg>
+              </button>
             </div>
             <input
               className={styles.inputField}

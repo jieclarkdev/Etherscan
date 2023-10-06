@@ -41,9 +41,43 @@ export default function HeroSection() {
   const [showResult, setShowResult] = useState(true);
   const [blockResult, setBlockResult] = useState([]);
   const [transactionsResult, setTransactionsResult] = useState([]);
-  const [ethPrice, setEthPrice] = useState("");
+
   const [totalTransactions, setTotalTransactions] = useState("");
   const [latestBlock, setLatestBlock] = useState("");
+
+  const [ethPrice, setEthPrice] = useState("");
+
+  const axios = require("axios");
+
+  useEffect(() => {
+    async function getEthereumPrice() {
+      try {
+        const response = await axios.get(
+          "https://api.coingecko.com/api/v3/simple/price",
+          {
+            params: {
+              ids: "ethereum",
+              vs_currencies: "usd",
+            },
+          }
+        );
+
+        if (response.status === 200) {
+          const ethereumPrice = response.data.ethereum.usd;
+          setEthPrice(ethereumPrice);
+        } else {
+          console.error(
+            "Failed to retrieve Ethereum price:",
+            response.statusText
+          );
+        }
+      } catch (error) {
+        console.error("Error fetching Ethereum price:", error.message);
+      }
+    }
+
+    getEthereumPrice();
+  }, []);
 
   return (
     <section className={styles.heroSectionContainer}>
@@ -62,9 +96,11 @@ export default function HeroSection() {
                 <div className={styles.ethPriceContainer}>
                   <p className={styles.heroNavFont}>ETHER PRICE </p>
                   <p className={styles.heroNavBelowFont}>
-                    $1,656.13{" "}
+                    ${Number(ethPrice).toFixed(2)}{" "}
                     <span className={styles.recentUpdate}>
-                      @ 0.060021 BTC{" "}
+                      <a href="https://etherscan.io/chart/etherprice">
+                        @ 0.060021 BTC
+                      </a>{" "}
                       <span className={styles.toRed}>(-4.38%)</span>
                     </span>
                   </p>

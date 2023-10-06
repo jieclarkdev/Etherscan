@@ -14,37 +14,65 @@ import ProfileMobile from "../public/assets/user.png";
 export default function Header() {
   const [ethPrice, setEthPrice] = useState("");
 
-  // useEffect(() => {
-  //   const getEthPrice = async () => {
-  //     const response = await axios.get("http://localhost:5001/getethprice", {});
-  //     setEthPrice(response.data.usdPrice);
-  //   };
-  //   getEthPrice();
-  // });
+  const axios = require("axios");
+
+  useEffect(() => {
+    async function getEthereumPrice() {
+      try {
+        const response = await axios.get(
+          "https://api.coingecko.com/api/v3/simple/price",
+          {
+            params: {
+              ids: "ethereum",
+              vs_currencies: "usd",
+            },
+          }
+        );
+
+        if (response.status === 200) {
+          const ethereumPrice = response.data.ethereum.usd;
+          setEthPrice(ethereumPrice);
+        } else {
+          console.error(
+            "Failed to retrieve Ethereum price:",
+            response.statusText
+          );
+        }
+      } catch (error) {
+        console.error("Error fetching Ethereum price:", error.message);
+      }
+    }
+
+    getEthereumPrice();
+  }, []);
 
   return (
     <section className={styles.header}>
       <section className={styles.topHeader}>
         <div className={styles.ethPriceGasContainer}>
-          <p>
+          <div>
             ETH Price:
             {/* <span className={styles.blueText}>
               ${Number(ethPrice).toFixed(2)}
             </span> */}
-            <span className={styles.blueText}> $1,656.13</span>{" "}
+            {/* <span className={styles.blueText}> $1,656.13</span> */}{" "}
+            <span className={styles.blueText}>
+              ${Number(ethPrice).toFixed(2)} {""}
+            </span>
             <span className={styles.toRed}>(-2.12%)</span>
-          </p>
+          </div>
           <div className={styles.gasFeeContainer}>
             <Image
               src={GasfeeImg}
               alt="gas icon"
               className={styles.gasFeeIcon}
             />
-            <p>
+            <div className={styles.gasPriceTop}>
               Gas: <span className={styles.blueText}>12 Gwei</span>
-            </p>
+            </div>
           </div>
         </div>
+
         <div className={styles.ethSwitchContainer}>
           <Image
             src={SwitchMode}
