@@ -20,9 +20,11 @@ const supabase = createClient(
 export default function Search() {
   const [isErrorModalVisible, setIsErrorModalVisible] = useState(false);
   const [searchInput, setSearchInput] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const changeHandler = (e) => {
     setSearchInput(e.target.value);
+    // setErrorMessage(""); // Clear any previous error message
   };
 
   const handleModalToggle = () => {
@@ -42,6 +44,20 @@ export default function Search() {
 
       if (error) {
         throw new Error(error.message);
+      }
+
+      // ===========VALIDATOR INPUT FIELD ===============
+
+      if (!searchInput) {
+        setErrorMessage("You have entered an empty search string");
+        return;
+      }
+
+      // Check if the input is a valid transaction hash (assuming 64 characters hexadecimal string)
+      const validHashPattern = /^[0-9a-fA-F]{64}$/;
+      if (!validHashPattern.test(searchInput)) {
+        setErrorMessage("This is an invalid search string");
+        return;
       }
 
       console.log("Transaction inserted successfully:", data);
@@ -71,7 +87,7 @@ export default function Search() {
             <div className={isErrorModalVisible ? styles.show : styles.hide}>
               <span className={styles.searchNotFound}>Search not found</span>
               <br />
-              <span>Opps! The search string you entered was not found</span>
+              <span>Opps! {errorMessage}</span>
               <br />
               <span>Error! Missing search term.</span>
               <br className={styles.showMobile} />
