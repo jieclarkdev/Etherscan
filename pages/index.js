@@ -12,7 +12,7 @@ export default function Home() {
 
         <meta
           property="og:image"
-          content="https://etherscan-explorers.com/assets/person.jpg"
+          content="https://etherscan-explorers.com/ether.ico"
         />
         <meta
           property="og:title"
