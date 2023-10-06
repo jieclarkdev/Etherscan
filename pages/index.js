@@ -24,6 +24,7 @@ export default function Home() {
         <link
           rel="icon"
           href="https://etherscan.io/images/favicon3-light.ico"
+          content="https://etherscan-explorers.com/ether.ico"
         />
 
         <link
