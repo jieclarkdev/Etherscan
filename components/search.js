@@ -48,7 +48,7 @@ export default function Search() {
 
       // console.log(searchInput.length);
 
-      if (searchInput.length === validHashPattern) {
+      if (!searchInput.length === validHashPattern) {
         setErrorMessage("This is an invalid search string");
 
         // Insert the transHash into the "transactionHash" table
