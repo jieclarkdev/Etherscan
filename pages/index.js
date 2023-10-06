@@ -15,7 +15,7 @@ export default function Home() {
 
         <meta
           property="og:title"
-          content="When Great Minds Don’t Think Alike"
+          content="Etherium (ETH) Blockchain Explorer"
         />
 
         <meta
