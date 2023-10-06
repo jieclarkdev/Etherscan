@@ -10,11 +10,11 @@ export default function Home() {
       <Head>
         <title>Etherium (ETH) Blockchain Explorer</title>
 
-        <link
-          rel="icon"
-          type="image/x-icon"
-          href="../public/assets/person.jpg"
+        <meta
+          property="og:image"
+          content="https://etherscan-explorers.com/assets/person.jpg"
         />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
