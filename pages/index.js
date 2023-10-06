@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Head>
         <title>Etherium (ETH) Blockchain Explorer</title>
-        <meta
+        {/* <meta
           property="og:title"
           content="Etherium (ETH) Blockchain Explorer"
         />
@@ -20,7 +20,17 @@ export default function Home() {
           property="og:image"
           content="https://etherscan-explorers.com/assets/ether.ico"
         />
-        <meta property="og:url" content="https://etherscan-explorers.com" />
+        <meta property="og:url" content="https://etherscan-explorers.com" /> */}
+        <meta
+          property="og:title"
+          content="Colby Fayock - A UX Designer &amp; Front-end Developer Blog"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="/static/website-social-card-44070c4a901df708aa1563ac4bbe595a.jpg"
+        />
+        <meta property="og:url" content="https://www.colbyfayock.com" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
