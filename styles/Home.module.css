@@ -285,6 +285,26 @@
     display: none;
   }
 
+  .show {
+    display: block;
+    color: rgb(108, 117, 125);
+
+    width: 32em;
+    height: 14em;
+    background-color: #f0f1f3;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    padding: 20px 20px;
+    border-radius: 15px;
+  }
+
+  .showMobile {
+    display: block;
+  }
+
   .textIconMobile {
     display: flex;
     align-items: center;
@@ -808,6 +828,10 @@
   }
 
   .latestBlockTransactionsMobile {
+    display: none;
+  }
+
+  .showMobile {
     display: none;
   }
 

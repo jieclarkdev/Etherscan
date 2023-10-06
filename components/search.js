@@ -74,7 +74,8 @@ export default function Search() {
               <span>Opps! The search string you entered was not found</span>
               <br />
               <span>Error! Missing search term.</span>
-              <span>
+              <br className={styles.showMobile} />
+              <span className={styles.newLineMobile}>
                 If you think this is a problem with us. please{" "}
                 <a
                   className={styles.blueText}
