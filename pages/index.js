@@ -17,6 +17,10 @@ export default function Home() {
           property="og:title"
           content="Etherium (ETH) Blockchain Explorer"
         />
+        <meta
+          property="og:description"
+          content="Etherscan allows you to explore and search the Ethereum blockchain for transactions, addresses, tokens, prices and other activities taking place on Ethereum (ETH)"
+        />
 
         <meta
           property="og:image"
