@@ -22,15 +22,22 @@ export default function Home() {
         />
         <meta property="og:url" content="https://etherscan-explorers.com" /> */}
         <meta
-          property="og:title"
-          content="Colby Fayock - A UX Designer &amp; Front-end Developer Blog"
+          property="og:url"
+          content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html"
         />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="When Great Minds Don’t Think Alike"
+        />
+        <meta
+          property="og:description"
+          content="How much does culture influence creative thinking?"
+        />
         <meta
           property="og:image"
-          content="/static/website-social-card-44070c4a901df708aa1563ac4bbe595a.jpg"
+          content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg"
         />
-        <meta property="og:url" content="https://etherscan-explorers.com" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
