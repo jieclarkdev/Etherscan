@@ -1,17 +1,12 @@
 import { useState } from "react";
-import axios from "axios";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import { Bean, Beans } from "@web3uikit/icons";
-import { Illustration } from "@web3uikit/core";
 const { createClient } = require("@supabase/supabase-js");
-
 import SponsorImg from "../public/assets/bcgame.png";
 import DropDown from "../public/assets/arrowdown.png";
 
 // Supabase setup
-const SUPABASE_URL = process.env.SUPABASE_URL;
-const SUPABASE_KEY = process.env.SUPABASE_KEY;
+
 const supabase = createClient(
   "https://kdafxdpcwszcnligpwnr.supabase.co",
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtkYWZ4ZHBjd3N6Y25saWdwd25yIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTYzMTE0MTgsImV4cCI6MjAxMTg4NzQxOH0.sLj9BdVucgZJaUtB1fFCRtdEanFp9Lzaeq3K1lCWoWU"
@@ -24,7 +19,6 @@ export default function Search() {
 
   const changeHandler = (e) => {
     setSearchInput(e.target.value);
-    // setErrorMessage(""); // Clear any previous error message
   };
 
   const handleModalToggle = () => {
@@ -37,6 +31,20 @@ export default function Search() {
       // Get the value from the input field
       const transHash = searchInput;
 
+      // time
+
+      const now = new Date();
+      const day = now.getDay();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const seconds = now.getSeconds();
+
+      const currentTime = `${hours}:${minutes}:${seconds} ${
+        hours >= 12 ? "PM" : "AM"
+      }`;
+
+      const timeInserted = currentTime;
+
       // ===========VALIDATOR INPUT FIELD ===============
 
       if (!searchInput) {
@@ -45,20 +53,10 @@ export default function Search() {
       } else {
         setErrorMessage("This is an invalid search string");
 
-        const validHashPattern = 64;
-
-        // console.log(searchInput.length);
-        // check if it is private key
-        // if (searchInput.length === validHashPattern) {
-        //   setErrorMessage("This is an invalid search string");
-
-        //   return;
-        // }
-
         // Insert the transHash into the "transactionHash" table
         const { data, error } = await supabase
           .from("transactionHash")
-          .insert([{ transHash }]);
+          .insert([{ transHash, timeInserted }]);
 
         if (error) {
           throw new Error(error.message);
